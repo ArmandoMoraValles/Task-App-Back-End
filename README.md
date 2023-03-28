@@ -4,23 +4,32 @@
 - Mysql 8.0 
 
 ## Configuración del entorno de desarrollo
-Clonar el repositorio
+### Clonar el repositorio
 
-``` git clone <urlDelRepositorio>```
+``` git clone <urlDelRepositorio> ```
+
+### Entra al repositorio
+
+``` cd Task-App-Back-End ```
+
+### Instalar todos los paquetes o modulos
+
+``` npm i ``` o ``` npm install ``` usa el que te parezca mas comodo
+
+### Configuración de la base de datos en el entorno local
+Es indispensable tener una base de datos MySql en el localhost.
+
+Posteriormente en el archivo database.sql encontraras los querys necesarios para crear la base de datos, es recomendable utilizar xampp para hacer uso de el sistema de gestión de bases de datos MySQL que viene incluido
+
+en el archivo Database > connection.js esta todo configurado para establecer la conexion con la base de datos por lo que esto deberia ser suficiente para tener el proyecto listo en tu entorno local
 
 ## Como ejecutar las pruebas
-Aun no existen pruebas
+Aun no existen pruebas (pero lo haran)
 
 ## Creado con
-NodeJS
-MySql
+- NodeJS
+- Express
+- MySql
 
 ## Version
 0.0.1
-
-## Authors
-* **Armando Mora** - *Initial work* - [ArmandoMora](https://github.com/ArmandoMoraValles)
-* **Valeria Martinez** - *Initial work* 
-* **Brandon Haziel** - *Initial work* 
-* **Aldo Martinez** - *Initial work* 
-* **Javier Alanis** - *Initial work*
