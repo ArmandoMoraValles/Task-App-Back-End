@@ -4,7 +4,8 @@
   "description": "Esta es la API que sera consumida por la aplicacion Tasks-App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "nodemon index.mjs"
   },
   "repository": {
     "type": "git",
@@ -18,10 +19,10 @@
   },
   "homepage": "https://github.com/ArmandoMoraValles/Task-App-Back-End#readme",
   "dependencies": {
+    "boxen": "^7.0.2",
     "express": "^4.18.2",
-    "mysql": "^2.18.1"
-  },
-  "devDependencies": {
+    "mysql2": "^3.2.0",
     "nodemon": "^2.0.22"
-  }
+  },
+  "devDependencies": {}
 }
