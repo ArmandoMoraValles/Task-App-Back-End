@@ -1,18 +1,12 @@
 # Task App back-end
-
-Esta es la API que sera consumida por la aplicacion Tasks-App
-
-### Requisitos
-
+## Requisitos
 - NodeJs 14.x o superior
 - Mysql 8.0 
 
-### Installing
-Ejecutar los siguientes comando para hacer el setup del proyecto
+## Configuración del entorno de desarrollo
+Clonar el repositorio
 
-- ```git clone <urlgitRepo> ```
-- ``cd <nombreDelProyecto>``
-- ```npm install``` o en su defecto ```yarn install```
+``` git clone <urlDelRepositorio>```
 
 ## Como ejecutar las pruebas
 Aun no existen pruebas

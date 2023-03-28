@@ -1,7 +1,7 @@
 {
-  "name": "Task-App-Back-End",
+  "name": "task-app-back-end",
   "version": "1.0.0",
-  "description": "",
+  "description": "Esta es la API que sera consumida por la aplicacion Tasks-App",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,10 +11,14 @@
     "url": "git+https://github.com/ArmandoMoraValles/Task-App-Back-End.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "armandomoravalles",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ArmandoMoraValles/Task-App-Back-End/issues"
   },
-  "homepage": "https://github.com/ArmandoMoraValles/Task-App-Back-End#readme"
+  "homepage": "https://github.com/ArmandoMoraValles/Task-App-Back-End#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  }
 }
