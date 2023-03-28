@@ -28,7 +28,7 @@ Crear el contenedor de Docker
 
 ``` docker run -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes --name task-app-database -d mysql:8.0.32 ```
 
-Ingresa en el servidor de MySQL alojado en el servidor 
+Ingresa en el servidor de MySQL alojado en el contenedor de Dcoker
 
 ``` docker exec -it task-app-database mysql -u root ``` 
 
