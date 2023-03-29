@@ -15,7 +15,7 @@ app.use('/api', login)
 
 app.use(verifyToken)
 app.use('/api', testToken)
-
+console.log("Lo que sea")
 app.listen(port, () =>
   console.log(
     boxen(`Api ready, listen on port: ${port}`, {
