@@ -1,14 +1,20 @@
-import express from 'express';
-import mysqlConnection from './Database/connection.mjs';
-import boxen from 'boxen';
+import express from 'express'
+import mysqlConnection from './src/Database/connection.mjs';
+import boxen from 'boxen'
+import login from './src/routes/login.mjs'
+import verifyToken from './src/middlewars/verifyToken.mjs';
+import testToken from './src/routes/testToken.mjs'
 
-const app = express();
-const port = 3000;
+const app = express()
+const port = 3000
 
-console.clear();
+console.clear()
 
-app.use(express.json());
-//app.use('/api', require('./src/routes/RegisterGame.js'))
+app.use(express.json())
+app.use('/api', login)
+
+app.use(verifyToken)
+app.use('/api', testToken)
 
 app.listen(port, () =>
   console.log(
@@ -18,18 +24,18 @@ app.listen(port, () =>
       margin: 1,
     })
   )
-);
+)
 
 mysqlConnection.connect((err) =>
   err
     ? console.log(err)
     : console.log(
-        boxen('successful connection to database', {
-          padding: 1,
-          borderColor: 'blue',
-          margin: 1,
-        })
-      )
-);
+      boxen('successful connection to database', {
+        padding: 1,
+        borderColor: 'blue',
+        margin: 1,
+      })
+    )
+)
 
-export default app;
+export default app

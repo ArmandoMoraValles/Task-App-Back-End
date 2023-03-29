@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "nodemon index.mjs"
+    "dev": "nodemon index.mjs"
   },
   "repository": {
     "type": "git",
@@ -21,8 +21,11 @@
   "dependencies": {
     "boxen": "^7.0.2",
     "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
     "mysql2": "^3.2.0",
     "nodemon": "^2.0.22"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^8.37.0"
+  }
 }
