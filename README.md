@@ -23,12 +23,12 @@ Posteriormente en el archivo database.sql encontrarás las consultas necesarias 
 
 en el archivo Database > connection.js está todo configurado para establecer la conexión con la base de datos por lo que esto debería ser suficiente para tener el proyecto listo en tu entorno local
 
-### Configuracion de la base de datos a traves de docker 
+### Configuracion de la base de datos en el entorno local a traves de docker 
 Crear el contenedor de Docker 
 
 ``` docker run -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes --name task-app-database -d mysql:8.0.32 ```
 
-Ingresa en el servidor de MySQL alojado en el servidor 
+Ingresa en el servidor de MySQL alojado en el contenedor de Dcoker
 
 ``` docker exec -it task-app-database mysql -u root ``` 
 
