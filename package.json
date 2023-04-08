@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ArmandoMoraValles/Task-App-Back-End#readme",
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "boxen": "^7.0.2",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.0",
