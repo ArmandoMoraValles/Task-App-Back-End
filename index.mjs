@@ -4,6 +4,7 @@ import boxen from 'boxen'
 import login from './src/routes/login.mjs'
 import verifyToken from './src/middlewars/verifyToken.mjs';
 import testToken from './src/routes/testToken.mjs'
+import newUser from './src/routes/newUser.mjs'
 
 const app = express()
 const port = 3000
@@ -11,11 +12,12 @@ const port = 3000
 console.clear()
 
 app.use(express.json())
-app.use('/api', login)
+app.use('/api', newUser);
+// app.use('/api', login)
 
-app.use(verifyToken)
-app.use('/api', testToken)
-console.log("Lo que sea")
+// app.use(verifyToken)
+// app.use('/api', testToken)
+
 app.listen(port, () =>
   console.log(
     boxen(`Api ready, listen on port: ${port}`, {
