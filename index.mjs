@@ -5,6 +5,8 @@ import login from './src/routes/login.mjs'
 import verifyToken from './src/middlewars/verifyToken.mjs';
 import testToken from './src/routes/testToken.mjs'
 import newUser from './src/routes/newUser.mjs'
+import createTeams from './src/routes/createTeams.mjs';
+import newProject from './src/routes/newProject.mjs';
 
 const app = express()
 const port = 3000
@@ -13,6 +15,8 @@ console.clear()
 
 app.use(express.json())
 app.use('/api', newUser);
+app.use('/api', createTeams);
+app.use('/api', newProject);
 // app.use('/api', login)
 
 // app.use(verifyToken)
