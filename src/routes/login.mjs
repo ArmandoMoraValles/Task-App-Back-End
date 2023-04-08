@@ -11,8 +11,7 @@ router.post('/login', (req,res) => {
     email: 'armando@email.com',
     }
 
-  jwt.sign(user, 'secretKey', (err, token) => {
-    console.log(process.env.TOKEN_SECRET)
+  jwt.sign(user, 'secretKey2', (err, token) => {
     res.json( { mensaje: 'Token generado con exito', token, } )
   })
 })

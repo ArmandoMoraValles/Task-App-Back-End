@@ -1,3 +1,7 @@
+CREATE DATABASE software;
+
+USE DATABASE software;
+
 CREATE TABLE users (
     email VARCHAR(100) NOT NULL,
     key_password VARCHAR(100) NOT NULL,
